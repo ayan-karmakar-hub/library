@@ -35,10 +35,6 @@ function render(){
         newBook.innerText = book.info();
         newBook.id=`book${numBooks}`;
         newBook.classList="books";
-        newBook.style.cssText = 
-        "justify-self: stretch; font-size:18px;\
-        line-height: 30px; text-align: left;\
-        border-bottom: 3px dashed black;";
         shelf.appendChild(newBook);
 
         // create the read button

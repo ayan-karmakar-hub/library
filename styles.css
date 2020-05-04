@@ -26,6 +26,15 @@ body h1{
     padding-right: 10px;
 }
 
+.books{
+    justify-self: stretch;
+    font-size:18px;
+    line-height: 30px;
+    text-align: left;
+    border-bottom: 3px dashed black;
+    padding-left: 5px;
+}
+
 .read-buttons{
     font-size: 20px;
     border: 3px solid black;
