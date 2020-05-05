@@ -1,22 +1,23 @@
 
+// book class
+class Book{
+    constructor(title, author, pages, read){
+        this.title = title;
+        this.author = author;
+        this.pages = pages;
+        this.read = read;
+    }
+    info(){
+        let res = `${this.title}` + "\n";
+        res += `by ${this.author}, ${this.pages} pages, `;
+        return this.read ? res + 'already read.' : res + 'not read yet.';
+    }
+}
+
 // initial display with sample book
 let myLibrary = [];
 myLibrary.push(new Book("Sample Title","Sample Author", 100, false));
 render();
-
-// book constructor
-function Book(title, author, pages, read){
-    this.title = title;
-    this.author = author;
-    this.pages = pages;
-    this.read = read;
-
-    this.info = () => {
-        let res = `${this.title}` + "\n";
-        res += `by ${this.author}, ${this.pages} pages, `;
-        return this.read ? res + 'already read.' : res + 'not read yet.';
-    };
-}
 
 // display the shelf: book info + read button + 
 // remove button for each book
